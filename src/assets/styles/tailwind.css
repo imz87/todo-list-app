@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+.todo-list-header {
+    @apply border-blue-50 flex items-center justify-around border-t-2 border-b-2;
+}
+.todo-list-body {
+    @apply border-blue-50 flex items-center justify-around border-b-2;
+}
+.btn {
+    @apply inline-block px-5 py-3 text-sm font-semibold tracking-wider rounded-lg;
+}
+.btn:focus {
+    @apply shadow outline-none;
+}
+.btn-indigo {
+    @apply text-white bg-indigo-500;
+}
+.btn-indigo:hover {
+    @apply bg-indigo-400;
+}
+.btn-indigo:active {
+    @apply bg-indigo-500;
+}
+.btn-gray {
+    @apply text-gray-800 bg-gray-400;
+}
+.btn-gray:hover {
+    @apply bg-gray-300;
+}
+.btn-gray:active {
+    @apply bg-gray-500;
+}
+.modal-label {
+    @apply mb-2 text-lg font-bold text-gray-700 uppercase;
+}
+.link-button {
+    @apply inline p-0 m-0 underline bg-transparent border-none outline-none cursor-pointer;
+}
+.badge {
+    @apply inline-block bg-indigo-500 text-white text-xs px-2 py-2 rounded-full font-semibold tracking-wide whitespace-nowrap;
+}
+.badge-indigo {
+    @apply badge bg-myindigo;
+}
+.badge-orange {
+    @apply badge bg-orange
+}
+@tailwind utilities;
